@@ -15,13 +15,15 @@ public final class PublicId {
 	private static final SecureRandom RANDOM = new SecureRandom();
 
 	/**
-	 * @param bits number of bits of entropy to use for generating IDs, in multiples of 8
+	 * Default constructor for PublicId, initializes to 128 bits by default.
 	 */
 	public PublicId() {
 		this(128);
 	}
 
 	/**
+	 * Constructor for PublicId, with supplied bit size in multiples of 8.
+	 *
 	 * @param bits number of bits of entropy to use for generating IDs, in multiples of 8
 	 */
 	public PublicId(int bits) {
